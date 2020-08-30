@@ -1,7 +1,7 @@
 import { Leader } from './leader.interface';
 
 export interface ILeaderboardService {
-  list: Array<Leader>;
+  // list: Array<Leader>;
   insert(name: string): void;
   getList(): Array<Leader>;
   increment(id: string): void;

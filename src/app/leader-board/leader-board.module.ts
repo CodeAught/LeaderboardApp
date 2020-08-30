@@ -9,6 +9,10 @@ import { AddLeaderComponent } from './add-leader/add-leader.component';
   declarations: [LeaderboardComponent, AddLeaderComponent],
   imports: [
     MaterialModule
+  ],
+  exports: [
+    LeaderboardComponent,
+    AddLeaderComponent
   ]
 })
 export class LeaderBoardModule { }

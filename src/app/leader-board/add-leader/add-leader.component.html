@@ -5,12 +5,12 @@
     <mat-card>
       <mat-card-content>
         <mat-form-field>
-          <input placeholder="Name" name="leader" [(ngModel)]="name" type="text" matInput>
+          <input placeholder="Leader Name" name="leader" [(ngModel)]="name" type="text" matInput>
         </mat-form-field>
       </mat-card-content>
       <mat-card-actions>
         <div class="wrapper">
-          <button align="right" type="submit" [disabled]="!name?.trim()" mat-stroked-button (click)="close()">
+          <button type="submit" [disabled]="!name?.trim()" mat-stroked-button (click)="close()">
             Add
           </button>
         </div>

@@ -1,15 +1,18 @@
-<div>
-  <app-add-leader></app-add-leader>
-</div>
-<div>
-  <div>
+<div class="container">
+  <div class="heading">
+    <h2><strong>Leaderboard App</strong></h2>
+  </div>
+  <div class="leader-button">
+    <app-add-leader></app-add-leader>
+  </div>
+  <div class="leaderboard-a">
     <app-leaderboard
       [leaders]="leaders$ | async"
       (increment)="onIncrement($event)"
       (decrement)="onDecrement($event)">
     </app-leaderboard>
   </div>
-  <div>
+  <div class="leaderboard-b">
     <app-leaderboard
       [leaders]="leaders$ | async"
       (increment)="onIncrement($event)"

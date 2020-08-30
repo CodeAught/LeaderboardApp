@@ -1,0 +1,29 @@
+.container {
+  margin: 50px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: [col1-start] auto  [col2-start] auto [col2-end];
+	grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end];
+  justify-content: center;
+  justify-items: center;
+}
+
+.heading {
+  grid-column: col1-start / col2-end;
+	grid-row: row1-start;
+}
+
+.leader-button {
+  grid-column: col1-start / col2-end;
+	grid-row: row2-start;
+}
+
+.leaderboard-a {
+  grid-column: col1-start;
+  grid-row: row3-start;
+}
+
+.leaderboard-b {
+  grid-column: col2-start;
+	grid-row: row3-start;
+}

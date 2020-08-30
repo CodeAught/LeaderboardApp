@@ -10,26 +10,31 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class LeaderboardService implements ILeaderboardService {
   private readonly maxLimit = 1000;
 
-  list: Array<Leader> = [
+  private list: Array<Leader> = [
     {
       id: '111',
       name: 'Leader 1',
-      points: 55
+      points: 72
     },
     {
       id: '114',
-      name: 'Leader 4',
-      points: 67
+      name: 'Leader 3',
+      points: 50
     },
     {
       id: '112',
       name: 'Leader 2',
-      points: 85
+      points: 29
     },
     {
       id: '113',
-      name: 'Leader 3',
-      points: 75
+      name: 'Leader 4',
+      points: 18
+    },
+    {
+      id: '115',
+      name: 'Leader 5',
+      points: 10
     }
   ];
 

@@ -12,27 +12,27 @@ export class LeaderboardService implements ILeaderboardService {
 
   private list: Array<Leader> = [
     {
-      id: '111',
+      id: '11111',
       name: 'Leader 1',
       points: 72
     },
     {
-      id: '114',
+      id: '33333',
       name: 'Leader 3',
       points: 50
     },
     {
-      id: '112',
+      id: '22222',
       name: 'Leader 2',
       points: 29
     },
     {
-      id: '113',
+      id: '44444',
       name: 'Leader 4',
       points: 18
     },
     {
-      id: '115',
+      id: '55555',
       name: 'Leader 5',
       points: 10
     }

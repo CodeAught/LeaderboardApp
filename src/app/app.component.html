@@ -2,5 +2,18 @@
   <app-add-leader></app-add-leader>
 </div>
 <div>
-  <app-leaderboard></app-leaderboard>
+  <div>
+    <app-leaderboard
+      [leaders]="leaders$ | async"
+      (increment)="onIncrement($event)"
+      (decrement)="onDecrement($event)">
+    </app-leaderboard>
+  </div>
+  <div>
+    <app-leaderboard
+      [leaders]="leaders$ | async"
+      (increment)="onIncrement($event)"
+      (decrement)="onDecrement($event)">
+    </app-leaderboard>
+  </div>
 </div>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "LeaderboardApp"
+    }
+  },
+  "defaultProject": "LeaderboardApp",
+  "cli": {
+    "analytics": false
+  }
 }

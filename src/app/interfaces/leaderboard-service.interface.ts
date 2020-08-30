@@ -1,6 +1,6 @@
 import { Leader } from './leader.interface';
 
-export interface LeaderboardService {
+export interface ILeaderboardService {
   list: Array<Leader>;
   insert(name: string): void;
   getList(): Array<Leader>;

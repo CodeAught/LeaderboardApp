@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="leader">
+    <div>{{ leader.name }}</div>
+    <div class="point-action">
+      <div class="font-blue">{{ leader.points }}</div>
+      <div id="action">
+        <div>
+          <mat-icon (click)="onIncrement()">add</mat-icon>
+        </div>
+        <div>
+          <mat-icon (click)="onDecrement()">remove</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

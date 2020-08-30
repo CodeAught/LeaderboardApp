@@ -1,0 +1,40 @@
+.wrapper {
+  margin: 15px 0;
+  padding: 10px 5px;
+  border: 1px solid #9c9999bf;
+  font-weight: 500;
+}
+
+.leader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leader .point-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leader .point-action > div {
+  margin: 0 5px;
+}
+
+.font-blue {
+  color: blue;
+}
+
+#action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#action > div {
+  margin: 0 5px;
+}
+
+#action > div > mat-icon {
+  cursor: pointer;
+}

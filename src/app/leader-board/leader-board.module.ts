@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 
 import { MaterialModule } from '../material/material.module';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [LeaderboardComponent],
   imports: [
     MaterialModule
   ]

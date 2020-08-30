@@ -3,7 +3,7 @@
     <h2><strong>Leaderboard App</strong></h2>
   </div>
   <div class="leader-button">
-    <app-add-leader></app-add-leader>
+    <app-add-leader (addLeader)="onAddLeader($event)"></app-add-leader>
   </div>
   <div class="leaderboard-a">
     <app-leaderboard

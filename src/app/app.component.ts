@@ -19,6 +19,10 @@ export class AppComponent implements OnInit {
     this.getLeaders();
   }
 
+  onAddLeader(name: string) {
+    this.leaderboardService.insert(name);
+  }
+
   onIncrement(id: string): void {
     this.leaderboardService.increment(id);
   }

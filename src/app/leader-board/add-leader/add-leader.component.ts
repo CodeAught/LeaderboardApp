@@ -24,9 +24,12 @@ export class AddLeaderComponent implements OnInit {
   onAddLeader(modal: TemplateRef<any>) {
     this.dialogRef = this.dialog.open(modal);
     this.dialogRef.afterClosed().subscribe(name => {
-      this.addLeader.emit(name);
-      this.openSnackBar();
-      this.name = '';
+      name = name?.trim();
+      if(name) {
+        this.addLeader.emit(name);
+        this.openSnackBar();
+        this.name = '';
+      }
     });
   }
 

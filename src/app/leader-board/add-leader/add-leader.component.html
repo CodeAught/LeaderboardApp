@@ -1,18 +1,20 @@
 <button mat-stroked-button (click)="onAddLeader(leaderModal)">Add Leader</button>
 
 <ng-template #leaderModal>
-  <mat-card>
-    <mat-card-content>
-      <mat-form-field>
-        <input placeholder="Name" [(ngModel)]="name" type="text" matInput>
-      </mat-form-field>
-    </mat-card-content>
-    <mat-card-actions>
-      <div class="wrapper">
-        <button [disabled]="!name" mat-stroked-button (click)="close()">
-          Add
-        </button>
-      </div>
-    </mat-card-actions>
-  </mat-card>
+  <form>
+    <mat-card>
+      <mat-card-content>
+        <mat-form-field>
+          <input placeholder="Name" name="leader" [(ngModel)]="name" type="text" matInput>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="wrapper">
+          <button align="right" type="submit" [disabled]="!name?.trim()" mat-stroked-button (click)="close()">
+            Add
+          </button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </form>
 </ng-template>

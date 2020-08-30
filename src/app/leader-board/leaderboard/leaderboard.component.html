@@ -1,1 +1,9 @@
-<p>leaderboard works!</p>
+<div class="container">
+  <ng-container *ngFor="let leader of leaders">
+    <app-leader
+      [leader]="leader"
+      (increment)="onIncrement($event)"
+      (decrement)="onDecrement($event)">
+    </app-leader>
+  </ng-container>
+</div>

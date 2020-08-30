@@ -21,7 +21,9 @@ export class LeaderComponent implements OnInit {
   }
 
   onDecrement(): void {
-    this.decrement.emit(this.leader.id);
+    if(this.leader.points > 0) {
+      this.decrement.emit(this.leader.id);
+    }
   }
 
 }
